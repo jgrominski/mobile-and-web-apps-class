@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em Book Tracker], a basic website to track your reading progress.
+
+  h3 Book Tracker Stats
+
+  ul
+    li #[strong Books:] !{book_count}
+    li #[strong Currently reading:] !{book_progress_currently_reading_count}
+    li #[strong To Read:] !{book_progress_to_read_count}
+    li #[strong Read:] !{book_progress_read_count}
+    li #[strong Authors:] !{author_count}
+    li #[strong Genres:] !{genre_count}
